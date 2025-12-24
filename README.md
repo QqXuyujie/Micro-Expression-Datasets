@@ -1,57 +1,99 @@
 # Micro-Expression-Datasets
-This repository contains a unified and extensible codebase for preprocessing and modeling micro-expression datasets, including SMIC, SAMM, CASME II, CASME III, and DFME.
 
-# 上述文件缺少两个权重：Flownet2.0的权重文件与dlib库的人脸68点位图。
-FlowNet2_checkpoint.pth.tar & shape_predictor_68_face_landmarks.dat
-请自行下载，或者联系创建者
+This repository contains a unified and extensible codebase for preprocessing and modeling micro-expression datasets, including **SMIC, SAMM, CASME II, CASME III, and DFME**.
 
-# cp39为安装FlowNet2.0的whl文件。
-该三个whl的使用满足的环境：torch 1.12，cuda 11.3 或者 cu11.4，python 3.9，windows
+---
 
-CAMSE2数据集
-5-class：
-	other（99）
-	disgust（63）
-	happiness（32）
-	repression（27）
-	surprise（25）
-3-class：
-	positive：happiness（32）
-	negative：disgust（63),repression（27）
-	surprise：surprise（25）
-	
-CAMSE3数据集
-4-Class：
-	negative：disgust（250），fear（86），anger（64），sad（57）
-	positive：happy（57）
-	surprise：surprise（187）
-	others：others（161）
-3-Class：
-	negative：disgust（250），fear（86），anger（64），sad（57）
-	positive：happy（57）
-	surprise：surprise（187）
-	
-SMIC数据集
-3-class：
-	positive：Happiness（26）
-	negative：Sadness，Disgust，Contempt，Fear，Anger（92）
-	Surprise：Surprise（15）
-5-class：
-	Anger：（57）
-	Contempt：（12）
-	Happiness：（26）
-	Surprise：（15）
-	Other：（26）
-	
-SAMM数据集
-3-class：
-	positive：Happiness（26）
-	negative：Sadness，Disgust，Contempt，Fear，Anger（92）
-	Surprise：Surprise（15）
+## Missing Files
 
-5-class：
-	Anger：（57）
-	Contempt：（12）
-	Happiness：（26）
-	Surprise：（15）
-	Other：（26）
+The following pretrained weight files are **not included** in this repository due to licensing restrictions:
+
+- **FlowNet2_checkpoint.pth.tar** (FlowNet2.0 pretrained weights)
+- **shape_predictor_68_face_landmarks.dat** (dlib 68-point facial landmark model)
+
+Please download them manually or contact the repository author.
+
+---
+
+## FlowNet2.0 Installation (cp39)
+
+The `cp39` directory contains `.whl` files for installing **FlowNet2.0**.
+
+### Supported Environment
+
+- **OS**: Windows  
+- **Python**: 3.9  
+- **PyTorch**: 1.12  
+- **CUDA**: 11.3 or 11.4 (cu11.3 / cu11.4)
+
+---
+
+## Dataset Details
+
+### CASME II Dataset
+
+#### 5-Class Classification
+- **Other**: 99  
+- **Disgust**: 63  
+- **Happiness**: 32  
+- **Repression**: 27  
+- **Surprise**: 25  
+
+#### 3-Class Classification
+- **Positive**: Happiness (32)  
+- **Negative**: Disgust (63), Repression (27)  
+- **Surprise**: Surprise (25)  
+
+---
+
+### CASME III Dataset
+
+#### 4-Class Classification
+- **Negative**: Disgust (250), Fear (86), Anger (64), Sadness (57)  
+- **Positive**: Happy (57)  
+- **Surprise**: Surprise (187)  
+- **Others**: Others (161)  
+
+#### 3-Class Classification
+- **Negative**: Disgust (250), Fear (86), Anger (64), Sadness (57)  
+- **Positive**: Happy (57)  
+- **Surprise**: Surprise (187)  
+
+---
+
+### SMIC Dataset
+
+#### 3-Class Classification
+- **Positive**: Happiness (26)  
+- **Negative**: Sadness, Disgust, Contempt, Fear, Anger (92)  
+- **Surprise**: Surprise (15)  
+
+#### 5-Class Classification
+- **Anger**: 57  
+- **Contempt**: 12  
+- **Happiness**: 26  
+- **Surprise**: 15  
+- **Other**: 26  
+
+---
+
+### SAMM Dataset
+
+#### 3-Class Classification
+- **Positive**: Happiness (26)  
+- **Negative**: Sadness, Disgust, Contempt, Fear, Anger (92)  
+- **Surprise**: Surprise (15)  
+
+#### 5-Class Classification
+- **Anger**: 57  
+- **Contempt**: 12  
+- **Happiness**: 26  
+- **Surprise**: 15  
+- **Other**: 26  
+
+---
+
+## Notes
+
+- Dataset labels follow the original dataset annotations.
+- The codebase is designed to be easily extensible to new micro-expression datasets.
