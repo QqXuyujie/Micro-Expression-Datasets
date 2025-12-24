@@ -1,0 +1,3 @@
+channelnorm_cuda-0.0.0-cp39-cp39-win_amd64.whl
+correlation_cuda-0.0.0-cp39-cp39-win_amd64.whl
+resample2d_cuda-0.0.0-cp39-cp39-win_amd64.whl
