@@ -1,6 +1,8 @@
 # Micro-Expression-Datasets
 This repository contains a unified and extensible codebase for preprocessing and modeling micro-expression datasets, including SMIC, SAMM, CASME II, CASME III, and DFME.
 
+上述文件缺少两个权重：Flownet2.0的权重文件与dlib库的人脸68点位图。
+
 CAMSE2数据集
 5-class：
 	other（99）
