@@ -1,11 +1,11 @@
 # Micro-Expression-Datasets
 This repository contains a unified and extensible codebase for preprocessing and modeling micro-expression datasets, including SMIC, SAMM, CASME II, CASME III, and DFME.
 
-上述文件缺少两个权重：Flownet2.0的权重文件与dlib库的人脸68点位图。
+# 上述文件缺少两个权重：Flownet2.0的权重文件与dlib库的人脸68点位图。
 FlowNet2_checkpoint.pth.tar & shape_predictor_68_face_landmarks.dat
 请自行下载，或者联系创建者
 
-cp39为安装FlowNet2.0的whl文件。
+# cp39为安装FlowNet2.0的whl文件。
 该三个whl的使用满足的环境：torch 1.12，cuda 11.3 或者 cu11.4，python 3.9，windows
 
 CAMSE2数据集
