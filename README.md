@@ -2,6 +2,8 @@
 This repository contains a unified and extensible codebase for preprocessing and modeling micro-expression datasets, including SMIC, SAMM, CASME II, CASME III, and DFME.
 
 上述文件缺少两个权重：Flownet2.0的权重文件与dlib库的人脸68点位图。
+FlowNet2_checkpoint.pth.tar & shape_predictor_68_face_landmarks.dat
+请自行下载，或者联系创建者
 
 CAMSE2数据集
 5-class：
